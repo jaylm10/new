@@ -1,0 +1,213 @@
+@import url("https://googleapis.com/css2?family=Propins:wght:@300;400;500;600;700;800;900&display=swap");
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Propins",sans-serif;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden; /* Ensure video doesn't overflow */
+}
+
+.back-video {
+    position: absolute;
+    top: 50%; /* Position video at the center vertically */
+    left: 50%; /* Position video at the center horizontally */
+    transform: translate(-50%, -50%); /* Move video back by half of its width and height */
+    min-width: 100%; /* Ensure video covers entire viewport */
+    min-height: 100%; /* Ensure video covers entire viewport */
+    width: auto;
+    height: auto;
+    z-index: -1;
+	opacity: 0.9;
+}
+
+.flx2{
+	display: flex;
+	gap: 50px;
+	margin-top: 30px;
+	margin-left: 15px;
+}
+.flx2 a{
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+    transition: all 0.3 ease;
+
+}
+
+@media(max-width:600px){
+	.flx2 a{
+		font-size: 15px;
+	}
+}
+
+@media(max-width:480px){
+	.flx2 a{
+		font-size: 12px;
+	}
+	.flx2{
+		gap: 30px;
+	}
+}
+.flx2 a:hover{
+    transform: scale(1.1);
+    border-bottom: 2px solid white;
+}
+.sabme{
+    font-weight: bolder;
+    border-radius: 50px;
+    transition: all 0.3 ease;
+    padding: 4px;
+    margin-top: -5px;
+    
+}
+.sabme:hover{
+    transform: scale(1.1);
+    background-color: #fff;
+    color: black; 
+}
+
+.wrapper{
+    width: 420px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255,0.2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width:480px){
+    .wrapper{
+        width: 350px;
+    }
+}
+
+@media (max-width:400px){
+    .wrapper{
+        width: 320px;
+    }
+}
+
+.wrapper h1{
+    font-size: 36px;
+    text-align: center;
+}
+
+.wrapper .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255,0.5);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder{
+    color: #fff;
+}
+
+.input-box i{
+    position: absolute;
+    right: 20px;
+    top: 30%;
+    font-size: 20px;
+}
+
+.wrapper .remember{
+    display: flex;
+    justify-content: space-between;
+    margin: -15px 0 15px;
+    font-size: 14px;
+}
+
+.remember label input{
+    accent-color: #fff;
+    margin-right: 3px;
+}
+
+.remember a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.remember a:hover{
+    text-decoration: underline;
+}
+
+.wrapper .btn{
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+
+.wrapper .register{
+    font-size: 14px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.register p a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register p a:hover{
+    text-decoration: underline;
+}
+
+@media (min-aspect-ratio:16/9){
+    .back-video{
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+@media (max-aspect-ratio:16/9){
+    .back-video{
+        width: auto;
+        height: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
